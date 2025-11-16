@@ -53,6 +53,19 @@
           <string>Connection state:</string>
          </property>
         </widget>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>10</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Growbox Control</string>
+         </property>
+        </widget>
        </widget>
        <widget class="QWidget" name="pageInfo">
         <widget class="QLabel" name="label_2">
