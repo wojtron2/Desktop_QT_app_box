@@ -27,10 +27,28 @@
     <property name="title">
      <string>Gtest1</string>
     </property>
+    <addaction name="actionGtest2"/>
+    <addaction name="actiontest3"/>
+   </widget>
+   <widget class="QMenu" name="menuInfo">
+    <property name="title">
+     <string>Info</string>
+    </property>
    </widget>
    <addaction name="menuGtest1"/>
+   <addaction name="menuInfo"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionGtest2">
+   <property name="text">
+    <string>Gtest2</string>
+   </property>
+  </action>
+  <action name="actiontest3">
+   <property name="text">
+    <string>test3</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
