@@ -13,7 +13,26 @@
   <property name="windowTitle">
    <string>GrowboxControl</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>29</x>
+      <y>20</y>
+      <width>751</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QStackedWidget" name="stackedScreens">
+       <widget class="QWidget" name="pageGrowbox"/>
+       <widget class="QWidget" name="pageInfo"/>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
