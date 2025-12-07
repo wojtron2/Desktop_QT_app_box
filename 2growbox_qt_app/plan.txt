@@ -1,2 +1,0 @@
-wpisanie ip oraz portu
-przycisk testu polaczenia connection status = ok
