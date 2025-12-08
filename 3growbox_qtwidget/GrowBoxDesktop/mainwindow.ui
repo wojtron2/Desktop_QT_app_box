@@ -79,7 +79,7 @@
      <widget class="QPushButton" name="pushButton_CLEAR_LOG">
       <property name="geometry">
        <rect>
-        <x>510</x>
+        <x>540</x>
         <y>510</y>
         <width>80</width>
         <height>24</height>

@@ -27,10 +27,13 @@ void MainWindow::on_pushButton_CONNECT_clicked()
 
     if (ip.isEmpty()) {
         QMessageBox::warning(this, "Blad", "Wprowadz adres IP urzadzenia.");
+        logMessage("ERROR: Wprowadz adres IP urzadzenia.");
         return;
     }
 
     qDebug() << "Connect klikniety, IP =" << ip;
+    logMessage(QStringLiteral("Kliknieto POLACZ (IP=%1)").arg(ip));
+
     // tutaj pozniej zrobimy realne polaczenie HTTP
 
 }

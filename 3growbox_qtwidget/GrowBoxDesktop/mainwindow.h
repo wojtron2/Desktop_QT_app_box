@@ -19,10 +19,11 @@ public:
 
     void logMessage(const QString &msg);  // deklaracja funkcji logowania
 
-    void on_pushButton_CLEAR_LOG_clicked(); // deklaracja funkcji przycisku czyszczenia logow
 
 private slots:
     void on_pushButton_CONNECT_clicked();
+
+    void on_pushButton_CLEAR_LOG_clicked(); // deklaracja funkcji przycisku czyszczenia logow
 
 private:
     Ui::MainWindow *ui;
