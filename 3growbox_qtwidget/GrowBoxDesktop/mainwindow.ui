@@ -17,86 +17,542 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>0</y>
+      <x>20</x>
+      <y>10</y>
       <width>780</width>
       <height>600</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab1_status">
      <property name="styleSheet">
-      <string notr="true">#tab1_status {
+      <string notr="true">#tab1_status { 
     background-image:url(:/new/img/fern.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #333333;
-}</string>
+}
+
+/*
+#groupBoxLED1{ 
+background-color: rgba(0, 70, 0, 204);
+border-radius: 8px;
+border: 4px solid #44ff07;
+color: white;
+padding: 8px;}
+*/
+</string>
      </property>
      <attribute name="title">
       <string>Status</string>
      </attribute>
+     <widget class="QGroupBox" name="groupBoxLED1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#groupBoxLED1{
+background-color: rgba(0, 70, 0, 204);
+border-radius: 8px;
+border: 4px solid #44ff07;
+color: white;
+padding: 8px;
+}</string>
+      </property>
+      <property name="title">
+       <string>LED1</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QPushButton" name="pushButton_LED1ON">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ON</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_LED1OFF">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>OFF</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxLED2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#groupBoxLED2{
+background-color: rgba(0, 70, 0, 204);
+border-radius: 8px;
+border: 4px solid #44ff07;
+color: white;
+padding: 8px;}</string>
+      </property>
+      <property name="title">
+       <string>LED2</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QPushButton" name="pushButton_LED2ON">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ON</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_LED2OFF">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>OFF</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxLED3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>160</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#groupBoxLED3{
+background-color: rgba(0, 70, 0, 204);
+border-radius: 8px;
+border: 4px solid #44ff07;
+color: white;
+padding: 8px;}</string>
+      </property>
+      <property name="title">
+       <string>LED3</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QPushButton" name="pushButton_LED3ON">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ON</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_LED3OFF">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>OFF</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxLED5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>280</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#groupBoxLED5{
+background-color: rgba(0, 70, 0, 204);
+border-radius: 8px;
+border: 4px solid #44ff07;
+color: white;
+padding: 8px;}</string>
+      </property>
+      <property name="title">
+       <string>LED5</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QPushButton" name="pushButton_LED5ON">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ON</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_LED5OFF">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>OFF</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxLED4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>220</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#groupBoxLED4{
+background-color: rgba(0, 70, 0, 204);
+border-radius: 8px;
+border: 4px solid #44ff07;
+color: white;
+padding: 8px;}</string>
+      </property>
+      <property name="title">
+       <string>LED4</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QPushButton" name="pushButton_LED4ON">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ON</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_LED4OFF">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>OFF</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxLED7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>400</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#groupBoxLED7{
+background-color: rgba(0, 70, 0, 204);
+border-radius: 8px;
+border: 4px solid #44ff07;
+color: white;
+padding: 8px;}</string>
+      </property>
+      <property name="title">
+       <string>LED7</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QPushButton" name="pushButton_LED7ON">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ON</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_LED7OFF">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>OFF</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxLED6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>340</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#groupBoxLED6{
+background-color: rgba(0, 70, 0, 204);
+border-radius: 8px;
+border: 4px solid #44ff07;
+color: white;
+padding: 8px;}</string>
+      </property>
+      <property name="title">
+       <string>LED6</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QPushButton" name="pushButton_LED6ON">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ON</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_LED6OFF">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>OFF</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_CHECKSTATUS">
+      <property name="geometry">
+       <rect>
+        <x>649</x>
+        <y>40</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CHECK STATUS</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxLED8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>460</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#groupBoxLED8{
+background-color: rgba(0, 70, 0, 204);
+border-radius: 8px;
+border: 4px solid #44ff07;
+color: white;
+padding: 8px;}</string>
+      </property>
+      <property name="title">
+       <string>LED8</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QPushButton" name="pushButton_LED8ON">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ON</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_LED8OFF">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>OFF</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxLED_ALL">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>40</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#groupBoxLED_ALL{
+background-color: rgba(0, 70, 0, 204);
+border-radius: 8px;
+border: 4px solid #44ff07;
+color: white;
+padding: 8px;}</string>
+      </property>
+      <property name="title">
+       <string>LED ALL</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QPushButton" name="pushButton_LED_ALL_OFF">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>OFF</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_LED_ALL_ON">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ON</string>
+       </property>
+      </widget>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab2_cam">
      <attribute name="title">
       <string>Cam</string>
      </attribute>
     </widget>
-    <widget class="QWidget" name="tab3_harm">
+    <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Harmonogram</string>
+      <string>Sounds</string>
      </attribute>
-    </widget>
-    <widget class="QWidget" name="tab4_logs">
-     <property name="font">
-      <font>
-       <family>Consolas</family>
-      </font>
-     </property>
-     <attribute name="title">
-      <string>Logi</string>
-     </attribute>
-     <widget class="QPlainTextEdit" name="plainTextEditLog">
+     <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
-        <x>13</x>
-        <y>19</y>
-        <width>751</width>
-        <height>481</height>
-       </rect>
-      </property>
-      <property name="readOnly">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="checkBox_2">
-      <property name="geometry">
-       <rect>
-        <x>640</x>
-        <y>510</y>
-        <width>121</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Scroll on new</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_CLEAR_LOG">
-      <property name="geometry">
-       <rect>
-        <x>540</x>
-        <y>510</y>
+        <x>200</x>
+        <y>60</y>
         <width>80</width>
         <height>24</height>
        </rect>
       </property>
       <property name="text">
-       <string>Clear log</string>
+       <string>PlaySound</string>
       </property>
      </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>60</y>
+        <width>91</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SelectSoundFile</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab3_harm">
+     <attribute name="title">
+      <string>Harmonogram</string>
+     </attribute>
     </widget>
     <widget class="QWidget" name="tab5settings">
      <attribute name="title">
@@ -168,34 +624,52 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab">
+    <widget class="QWidget" name="tab4_logs">
+     <property name="font">
+      <font>
+       <family>Consolas</family>
+      </font>
+     </property>
      <attribute name="title">
-      <string>Sounds</string>
+      <string>Logi</string>
      </attribute>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPlainTextEdit" name="plainTextEditLog">
       <property name="geometry">
        <rect>
-        <x>200</x>
-        <y>60</y>
+        <x>13</x>
+        <y>19</y>
+        <width>751</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_2">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>510</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Scroll on new</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_CLEAR_LOG">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>510</y>
         <width>80</width>
         <height>24</height>
        </rect>
       </property>
       <property name="text">
-       <string>PlaySound</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_2">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>60</y>
-        <width>91</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>SelectSoundFile</string>
+       <string>Clear log</string>
       </property>
      </widget>
     </widget>
