@@ -13,6 +13,8 @@ MainWindow::MainWindow(QWidget *parent)
     setWindowTitle("GrowBox Desktop");  // tytul okna
 
     ui->plainTextEditLog->document()->setMaximumBlockCount(1000);  //max log blockcount size
+
+    logMessage("INFO: Aplikacja wystartowala.");
 }
 
 MainWindow::~MainWindow()
