@@ -17,14 +17,14 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>10</y>
+      <x>10</x>
+      <y>0</y>
       <width>780</width>
       <height>600</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="tab1_status">
      <property name="styleSheet">
@@ -402,14 +402,14 @@ padding: 8px;}</string>
      <widget class="QPushButton" name="pushButton_CHECKSTATUS">
       <property name="geometry">
        <rect>
-        <x>649</x>
+        <x>619</x>
         <y>40</y>
-        <width>81</width>
+        <width>131</width>
         <height>41</height>
        </rect>
       </property>
       <property name="text">
-       <string>CHECK STATUS</string>
+       <string>UPDATE ALL STATUS</string>
       </property>
      </widget>
      <widget class="QGroupBox" name="groupBoxLED8">
@@ -509,6 +509,43 @@ padding: 8px;}</string>
        </property>
        <property name="text">
         <string>ON</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxSENSOR1">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>160</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#groupBoxSENSOR1{
+background-color: rgba(0, 70, 0, 204);
+border-radius: 8px;
+border: 4px solid #44ff07;
+color: white;
+padding: 8px;}</string>
+      </property>
+      <property name="title">
+       <string>SENSOR 1</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QPushButton" name="pushButton_LED_ALL_ON_3">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>70</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>UPDATE</string>
        </property>
       </widget>
      </widget>
@@ -621,6 +658,71 @@ padding: 8px;}</string>
         <width>108</width>
         <height>24</height>
        </rect>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="timeEdit">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>150</y>
+        <width>118</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>220</y>
+        <width>161</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ustaw czas urzadzenia z PC</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>161</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pobiera&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="text">
+       <string>Pobierz godzine z urzadzenia</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>300</y>
+        <width>181</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Aktualizuj firmware urzadzenia</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>120</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;Czas urzadzenia&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </widget>
