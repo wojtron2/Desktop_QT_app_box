@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>5</number>
     </property>
     <widget class="QWidget" name="tab1_status">
      <property name="styleSheet">
@@ -102,27 +102,30 @@
      <attribute name="title">
       <string>Ustawienia</string>
      </attribute>
-     <widget class="QCheckBox" name="checkBox">
+     <widget class="QLabel" name="label_PORT">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>55</y>
+        <width>25</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Port:</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_AUTOCONNECT">
       <property name="geometry">
        <rect>
         <x>540</x>
-        <y>20</y>
-        <width>101</width>
+        <y>23</y>
+        <width>91</width>
         <height>21</height>
        </rect>
       </property>
       <property name="text">
        <string>AutoConnect</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit_PORT">
-      <property name="geometry">
-       <rect>
-        <x>332</x>
-        <y>50</y>
-        <width>108</width>
-        <height>24</height>
-       </rect>
       </property>
      </widget>
      <widget class="QWidget" name="">
@@ -154,24 +157,15 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QLineEdit" name="lineEdit_PORT">
       <property name="geometry">
        <rect>
-        <x>288</x>
-        <y>50</y>
-        <width>141</width>
-        <height>26</height>
+        <x>332</x>
+        <y>51</y>
+        <width>108</width>
+        <height>24</height>
        </rect>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
-       <item>
-        <widget class="QLabel" name="label_PORT">
-         <property name="text">
-          <string>Port:</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
      </widget>
     </widget>
     <widget class="QWidget" name="tab6_info">
@@ -192,7 +186,7 @@
         <x>270</x>
         <y>190</y>
         <width>250</width>
-        <height>150</height>
+        <height>160</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -219,7 +213,7 @@ padding: 8px;}</string>
           <bool>false</bool>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; color:#ffffff;&quot;&gt;GrowBox Desktop&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;Sterowanie growboxem przez siec LAN&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;wersja: &lt;span style=&quot; color:#ff0000;&quot;&gt;0.1.0&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;by &lt;span style=&quot; color:#55ff00;&quot;&gt;wojtron&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; color:#ffffff;&quot;&gt;GrowBox Desktop&lt;br/&gt;&lt;/span&gt;&lt;br/&gt;Sterowanie growboxem przez siec LAN&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;wersja: &lt;span style=&quot; color:#ff0000;&quot;&gt;0.1.0&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;by &lt;span style=&quot; color:#55ff00;&quot;&gt;wojtron&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="textFormat">
           <enum>Qt::TextFormat::AutoText</enum>
@@ -235,17 +229,6 @@ padding: 8px;}</string>
       </layout>
      </widget>
     </widget>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>530</x>
-      <y>40</y>
-      <width>248</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout"/>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

@@ -17,8 +17,9 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->plainTextEditLog->document()->setMaximumBlockCount(1000);  //max log blockcount size
 
-    logMessage("INFO: Aplikacja wystartowala.");
+    logMessage("INFO: Aplikacja uruchomiona.");
     loadSettings();  // wczytaj ustawienia z pliku
+
 }
 
 MainWindow::~MainWindow()
@@ -82,9 +83,17 @@ void MainWindow::loadSettings()
 
     // odczyt IP (domyslnie pusty string)
     const QString ip =
-        settings.value("network/ip", "").toString();
+        settings.value("network/ip", "192.168.0.220").toString();
+
+    const QString port =
+        settings.value("network/port", "8080").toString();
+
+    const bool autoconnect =
+        settings.value("network/autoconnect", false).toBool();
+    ui->checkBox_AUTOCONNECT->setChecked(autoconnect);
 
     ui->lineEdit_IP->setText(ip);
+    ui->lineEdit_PORT->setText(port);
 
     logMessage("INFO: Zaladowanie ustawien.");
 }
@@ -99,6 +108,12 @@ void MainWindow::saveSettings()
 
     settings.setValue("network/ip",
                       ui->lineEdit_IP->text().trimmed());
+
+    settings.setValue("network/port",
+                      ui->lineEdit_PORT->text().trimmed());
+
+    settings.setValue("network/autoconnect",
+                      ui->checkBox_AUTOCONNECT->isChecked());
 
     settings.sync();   // wymus zapis na dysk
 
