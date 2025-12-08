@@ -2,5 +2,6 @@
     <qresource prefix="/new/img">
         <file>img/forest1.jpg</file>
         <file>img/forest2.jpg</file>
+        <file>img/plant_icon.png</file>
     </qresource>
 </RCC>

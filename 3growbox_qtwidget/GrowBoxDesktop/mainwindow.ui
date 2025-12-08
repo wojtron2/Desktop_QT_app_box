@@ -138,7 +138,7 @@ padding: 8px;}</string>
           <bool>false</bool>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;GrowBox Desktop&lt;br/&gt;&lt;br/&gt;Sterowanie growboxem przez siec LAN&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;wersja: &lt;span style=&quot; color:#ff0000;&quot;&gt;0.0.3&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;by &lt;span style=&quot; color:#55ff00;&quot;&gt;wojtron&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;GrowBox Desktop&lt;br/&gt;&lt;br/&gt;Sterowanie growboxem przez siec LAN&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;wersja: &lt;span style=&quot; color:#ff0000;&quot;&gt;0.0.4&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;by &lt;span style=&quot; color:#55ff00;&quot;&gt;wojtron&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="textFormat">
           <enum>Qt::TextFormat::AutoText</enum>
