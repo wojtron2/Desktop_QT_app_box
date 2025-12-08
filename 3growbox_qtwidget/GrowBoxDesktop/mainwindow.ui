@@ -24,9 +24,9 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>0</number>
     </property>
-    <widget class="QWidget" name="tab">
+    <widget class="QWidget" name="tab_1status">
      <attribute name="title">
       <string>Status</string>
      </attribute>
@@ -67,27 +67,27 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_2">
+    <widget class="QWidget" name="tab_2cam">
      <attribute name="title">
       <string>Cam</string>
      </attribute>
     </widget>
-    <widget class="QWidget" name="tab_3">
+    <widget class="QWidget" name="tab_3harm">
      <attribute name="title">
       <string>Harmonogram</string>
      </attribute>
     </widget>
-    <widget class="QWidget" name="tab_4">
+    <widget class="QWidget" name="tab_4logs">
      <attribute name="title">
       <string>Logi</string>
      </attribute>
     </widget>
-    <widget class="QWidget" name="tab_5">
+    <widget class="QWidget" name="tab_5settings">
      <attribute name="title">
       <string>Ustawienia</string>
      </attribute>
     </widget>
-    <widget class="QWidget" name="tab_6">
+    <widget class="QWidget" name="tab_6info">
      <attribute name="title">
       <string>Info</string>
      </attribute>
