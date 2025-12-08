@@ -168,6 +168,11 @@
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Sounds</string>
+     </attribute>
+    </widget>
     <widget class="QWidget" name="tab6_info">
      <property name="styleSheet">
       <string notr="true">#tab6_info {
