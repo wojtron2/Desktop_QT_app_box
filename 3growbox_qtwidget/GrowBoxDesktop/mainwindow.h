@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 
-inline constexpr auto VERSION_SW = "0.1.6";
+inline constexpr auto VERSION_SW = "0.1.7";
 
 
 QT_BEGIN_NAMESPACE
