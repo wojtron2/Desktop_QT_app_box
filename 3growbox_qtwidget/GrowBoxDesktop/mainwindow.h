@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 
+inline constexpr auto VERSION_SW = "0.1.4";
+
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;

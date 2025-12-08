@@ -15,9 +15,14 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     setWindowTitle("GrowBox Desktop");  // tytul okna
 
+    ui->label_INFO->setText(
+        ui->label_INFO->text().arg(VERSION_SW));    // set version in text from variable VERSION_SW
+
     ui->plainTextEditLog->document()->setMaximumBlockCount(1000);  //max log blockcount size
 
     logMessage("INFO: Aplikacja uruchomiona.");
+    logMessage(QString("Wersja: %1")
+                   .arg(VERSION_SW));
     loadSettings();  // wczytaj ustawienia z pliku
 
 }
