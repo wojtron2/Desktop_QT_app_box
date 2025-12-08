@@ -26,6 +26,11 @@ private slots:
     void on_pushButton_CLEAR_LOG_clicked(); // deklaracja funkcji przycisku czyszczenia logow
 
 private:
+    // zapisywanie i odczyt ustawien
+    void loadSettings();   // save settings
+    void saveSettings();   // load settings
+
+
     Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H

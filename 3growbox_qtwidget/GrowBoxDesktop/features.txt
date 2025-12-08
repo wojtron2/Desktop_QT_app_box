@@ -1,0 +1,13 @@
+add logging, clear log
+todo auto scroll log
+
+set icon
+
+add info image
+add status image
+
+settings save and load
+
+set port
+
+versioning with const

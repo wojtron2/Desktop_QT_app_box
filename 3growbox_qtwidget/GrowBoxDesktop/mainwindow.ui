@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="tab1_status">
      <property name="styleSheet">
@@ -115,6 +115,16 @@
        <string>AutoConnect</string>
       </property>
      </widget>
+     <widget class="QLineEdit" name="lineEdit_PORT">
+      <property name="geometry">
+       <rect>
+        <x>332</x>
+        <y>50</y>
+        <width>108</width>
+        <height>24</height>
+       </rect>
+      </property>
+     </widget>
      <widget class="QWidget" name="">
       <property name="geometry">
        <rect>
@@ -139,6 +149,25 @@
         <widget class="QPushButton" name="pushButton_CONNECT">
          <property name="text">
           <string>POŁĄCZ</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>288</x>
+        <y>50</y>
+        <width>141</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_PORT">
+         <property name="text">
+          <string>Port:</string>
          </property>
         </widget>
        </item>
@@ -190,7 +219,7 @@ padding: 8px;}</string>
           <bool>false</bool>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; color:#ffffff;&quot;&gt;GrowBox Desktop&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;Sterowanie growboxem przez siec LAN&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;wersja: &lt;span style=&quot; color:#ff0000;&quot;&gt;0.0.7&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;by &lt;span style=&quot; color:#55ff00;&quot;&gt;wojtron&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; color:#ffffff;&quot;&gt;GrowBox Desktop&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;Sterowanie growboxem przez siec LAN&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;wersja: &lt;span style=&quot; color:#ff0000;&quot;&gt;0.1.0&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;by &lt;span style=&quot; color:#55ff00;&quot;&gt;wojtron&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="textFormat">
           <enum>Qt::TextFormat::AutoText</enum>
