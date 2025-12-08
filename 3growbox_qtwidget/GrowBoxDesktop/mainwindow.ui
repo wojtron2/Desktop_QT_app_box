@@ -96,7 +96,7 @@
     <widget class="QWidget" name="tab6_info">
      <property name="styleSheet">
       <string notr="true">#tab6_info {
-    background-image:url(:/new/img/img/forest2.jpg);
+    background-image:url(:/new/img/forest2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #333333;
