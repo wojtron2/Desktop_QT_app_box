@@ -49,7 +49,7 @@ void MainWindow::logMessage(const QString &msg)
     //ui->plainTextEditLog->document()->setMaximumBlockCount(1000);
 }
 
-/*
+
 
 void MainWindow::on_pushButton_CLEAR_LOG_clicked()
 {
@@ -58,4 +58,4 @@ void MainWindow::on_pushButton_CLEAR_LOG_clicked()
 }
 
 
-*/
+
