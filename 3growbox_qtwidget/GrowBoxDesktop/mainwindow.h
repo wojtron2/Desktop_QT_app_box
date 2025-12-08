@@ -17,6 +17,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    void logMessage(const QString &msg);  // <-- dopisz to
+
 private slots:
     void on_pushButton_CONNECT_clicked();
 

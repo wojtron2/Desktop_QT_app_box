@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="tab1status">
      <attribute name="title">
@@ -42,9 +42,53 @@
      </attribute>
     </widget>
     <widget class="QWidget" name="tab4_logs">
+     <property name="font">
+      <font>
+       <family>Consolas</family>
+      </font>
+     </property>
      <attribute name="title">
       <string>Logi</string>
      </attribute>
+     <widget class="QPlainTextEdit" name="plainTextEditLog">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>19</y>
+        <width>751</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_2">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>510</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Scroll on new</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_CLEAR_LOG">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>510</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear log</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab5settings">
      <attribute name="title">
@@ -138,7 +182,7 @@ padding: 8px;}</string>
           <bool>false</bool>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;GrowBox Desktop&lt;br/&gt;&lt;br/&gt;Sterowanie growboxem przez siec LAN&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;wersja: &lt;span style=&quot; color:#ff0000;&quot;&gt;0.0.4&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;by &lt;span style=&quot; color:#55ff00;&quot;&gt;wojtron&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;GrowBox Desktop&lt;br/&gt;&lt;br/&gt;Sterowanie growboxem przez siec LAN&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;wersja: &lt;span style=&quot; color:#ff0000;&quot;&gt;0.0.5&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;by &lt;span style=&quot; color:#55ff00;&quot;&gt;wojtron&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="textFormat">
           <enum>Qt::TextFormat::AutoText</enum>

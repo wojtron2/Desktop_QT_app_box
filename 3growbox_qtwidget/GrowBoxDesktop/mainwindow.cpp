@@ -1,5 +1,6 @@
 #include <QDebug>
 #include <QMessageBox>
+#include <QDateTime>
 
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
@@ -10,6 +11,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     setWindowTitle("GrowBox Desktop");  // tytul okna
+
+    ui->plainTextEditLog->document()->setMaximumBlockCount(1000);  //max log blockcount size
 }
 
 MainWindow::~MainWindow()
@@ -32,3 +35,27 @@ void MainWindow::on_pushButton_CONNECT_clicked()
 
 }
 
+void MainWindow::logMessage(const QString &msg)
+{
+    // timestamp
+    const QString ts =
+        QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss");
+
+    // dopisz linie do okna logow
+    ui->plainTextEditLog->appendPlainText(
+        QStringLiteral("[%1] %2").arg(ts, msg));
+
+    // opcjonalnie ogranicz liczbe linii, zeby log nie rosl w nieskonczonosc
+    //ui->plainTextEditLog->document()->setMaximumBlockCount(1000);
+}
+
+/*
+
+void MainWindow::on_pushButton_CLEAR_LOG_clicked()
+{
+    ui->plainTextEditLog->clear();
+    logMessage("Log wyczyszczony.");
+}
+
+
+*/
