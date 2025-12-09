@@ -403,7 +403,7 @@ padding: 8px;}</string>
       <property name="geometry">
        <rect>
         <x>619</x>
-        <y>40</y>
+        <y>45</y>
         <width>131</width>
         <height>41</height>
        </rect>
@@ -761,207 +761,416 @@ padding: 8px;}</string>
      <attribute name="title">
       <string>Ustawienia</string>
      </attribute>
-     <widget class="QLabel" name="label_PORT">
+     <widget class="QTabWidget" name="tabWidget_2">
       <property name="geometry">
        <rect>
-        <x>300</x>
-        <y>55</y>
-        <width>25</width>
-        <height>16</height>
+        <x>0</x>
+        <y>0</y>
+        <width>771</width>
+        <height>531</height>
        </rect>
       </property>
-      <property name="text">
-       <string>Port:</string>
+      <property name="currentIndex">
+       <number>0</number>
       </property>
-     </widget>
-     <widget class="QCheckBox" name="checkBox_AUTOCONNECT">
-      <property name="geometry">
-       <rect>
-        <x>540</x>
-        <y>23</y>
-        <width>91</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>AutoConnect</string>
-      </property>
-     </widget>
-     <widget class="QWidget" name="layoutWidget">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>20</y>
-        <width>248</width>
-        <height>26</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <widget class="QLabel" name="label_IP">
-         <property name="text">
-          <string>Adres IP:</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEdit_IP"/>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_CONNECT">
-         <property name="text">
-          <string>POŁĄCZ</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit_PORT">
-      <property name="geometry">
-       <rect>
-        <x>332</x>
-        <y>51</y>
-        <width>108</width>
-        <height>24</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QTimeEdit" name="timeEdit">
-      <property name="geometry">
-       <rect>
-        <x>330</x>
-        <y>120</y>
-        <width>121</width>
-        <height>25</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_3">
-      <property name="geometry">
-       <rect>
-        <x>310</x>
-        <y>210</y>
-        <width>161</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Ustaw czas urzadzenia z PC</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_4">
-      <property name="geometry">
-       <rect>
-        <x>310</x>
-        <y>180</y>
-        <width>161</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="toolTip">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pobiera&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-      <property name="text">
-       <string>Pobierz godzine z urzadzenia</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_5">
-      <property name="geometry">
-       <rect>
-        <x>300</x>
-        <y>260</y>
-        <width>181</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Aktualizuj firmware urzadzenia</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>340</x>
-        <y>100</y>
-        <width>101</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;Czas urzadzenia&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>320</x>
-        <y>310</y>
-        <width>171</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Camera device linux adress</string>
-      </property>
-     </widget>
-     <widget class="QTextEdit" name="textEdit">
-      <property name="geometry">
-       <rect>
-        <x>310</x>
-        <y>330</y>
-        <width>161</width>
-        <height>31</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QDateEdit" name="dateEdit">
-      <property name="geometry">
-       <rect>
-        <x>330</x>
-        <y>150</y>
-        <width>121</width>
-        <height>25</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_11">
-      <property name="geometry">
-       <rect>
-        <x>480</x>
-        <y>330</y>
-        <width>80</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>LOAD</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_12">
-      <property name="geometry">
-       <rect>
-        <x>570</x>
-        <y>330</y>
-        <width>80</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>SEND</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_16">
-      <property name="geometry">
-       <rect>
-        <x>310</x>
-        <y>380</y>
-        <width>161</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Camera timelapse settings</string>
-      </property>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Main</string>
+       </attribute>
+       <widget class="QLineEdit" name="lineEdit_PORT">
+        <property name="geometry">
+         <rect>
+          <x>313</x>
+          <y>68</y>
+          <width>108</width>
+          <height>24</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_CONNECT">
+        <property name="geometry">
+         <rect>
+          <x>427</x>
+          <y>38</y>
+          <width>80</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>POŁĄCZ</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_AUTOCONNECT">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>40</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>AutoConnect</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_IP">
+        <property name="geometry">
+         <rect>
+          <x>313</x>
+          <y>38</y>
+          <width>108</width>
+          <height>24</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_PORT">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>72</y>
+          <width>25</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Port:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_IP">
+        <property name="geometry">
+         <rect>
+          <x>261</x>
+          <y>38</y>
+          <width>46</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Adres IP:</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Sensor</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_23">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>210</y>
+          <width>127</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>SET SENSOR 4 SPI</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_20">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>90</y>
+          <width>127</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>SET SENSOR 1 SPI</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_18">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>20</y>
+          <width>127</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>SPI SCAN LIST</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_19">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>20</y>
+          <width>127</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>SCAN SPI DEVICES</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_21">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>130</y>
+          <width>127</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>SET SENSOR 2 SPI</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_22">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>170</y>
+          <width>127</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>SET SENSOR 3 SPI</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_24">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>210</y>
+          <width>127</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ENABLE SENSOR 4</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_25">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>90</y>
+          <width>127</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ENABLE SENSOR 1</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_26">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>130</y>
+          <width>127</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ENABLE SENSOR 2</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_27">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>170</y>
+          <width>127</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ENABLE SENSOR 3</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Camera</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_16">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>160</y>
+          <width>161</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Camera timelapse settings</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="textEdit">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>110</y>
+          <width>161</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_11">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>110</y>
+          <width>80</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>LOAD</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>90</y>
+          <width>171</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Camera device linux adress</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_12">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>110</y>
+          <width>80</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>SEND</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_28">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>50</y>
+          <width>80</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>REFRESH RATE</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_29">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>310</y>
+          <width>80</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Start FTP</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_30">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>350</y>
+          <width>80</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Stop FTP</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>Time</string>
+       </attribute>
+       <widget class="QDateEdit" name="dateEdit">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>120</y>
+          <width>121</width>
+          <height>25</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTimeEdit" name="timeEdit">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>90</y>
+          <width>121</width>
+          <height>25</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>70</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;Czas urzadzenia&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>250</y>
+          <width>175</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Aktualizuj firmware urzadzenia</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>306</x>
+          <y>171</y>
+          <width>165</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pobiera&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Pobierz godzine z urzadzenia</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>306</x>
+          <y>201</y>
+          <width>165</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ustaw czas urzadzenia z PC</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="tab4_logs">
