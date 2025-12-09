@@ -146,3 +146,28 @@ void MainWindow::onHttpFinished(QNetworkReply *reply)
 
     reply->deleteLater();
 }
+
+
+void MainWindow::on_LED1ON_clicked()
+{
+    const QString ip   = ui->lineEdit_IP->text().trimmed();
+    const QString port = ui->lineEdit_PORT->text().trimmed();
+
+    const QString urlStr = QStringLiteral("http://%1:%2/api/led1on")
+                               .arg(ip, port);
+
+    QNetworkRequest req{QUrl(urlStr)};
+    m_netManager->get(req);   // HTTP GET
+}
+
+void MainWindow::on_LED1OFF_clicked()
+{
+    const QString ip   = ui->lineEdit_IP->text().trimmed();
+    const QString port = ui->lineEdit_PORT->text().trimmed();
+
+    const QString urlStr = QStringLiteral("http://%1:%2/api/led1off")
+                               .arg(ip, port);
+
+    QNetworkRequest req{QUrl(urlStr)};
+    m_netManager->get(req);   // HTTP GET
+}
