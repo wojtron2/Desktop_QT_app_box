@@ -399,7 +399,7 @@ padding: 8px;}</string>
        </property>
       </widget>
      </widget>
-     <widget class="QPushButton" name="pushButton_CHECKSTATUS">
+     <widget class="QPushButton" name="pushButton_UPDATE_STATUS">
       <property name="geometry">
        <rect>
         <x>619</x>
@@ -660,6 +660,19 @@ padding: 8px;}</string>
        </property>
       </widget>
      </widget>
+     <widget class="QPushButton" name="pushButton_SHUTDOWN_LINUX">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>110</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SHUTDOWN LINUX</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab2_cam">
      <attribute name="title">
@@ -849,7 +862,7 @@ padding: 8px;}</string>
          <string>Adres IP:</string>
         </property>
        </widget>
-       <widget class="QWidget" name="">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
           <x>300</x>
