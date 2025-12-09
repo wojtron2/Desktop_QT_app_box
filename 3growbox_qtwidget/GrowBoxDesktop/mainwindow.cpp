@@ -4,6 +4,7 @@
 #include <QSettings>
 #include <QCoreApplication>
 #include <QDir>
+#include <QNetworkRequest>
 
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
@@ -11,6 +12,7 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , m_netManager(new QNetworkAccessManager(this))
 {
     ui->setupUi(this);
     setWindowTitle("GrowBox Desktop");  // tytul okna
@@ -126,3 +128,21 @@ void MainWindow::saveSettings()
 }
 
 // !! SETTINGS END !!
+
+
+
+
+// NETWORK
+
+void MainWindow::onHttpFinished(QNetworkReply *reply)
+{
+    // opcjonalnie log / info z odpowiedzi
+    if (reply->error() != QNetworkReply::NoError) {
+        qDebug() << "HTTP error:" << reply->errorString();
+    } else {
+        const QByteArray body = reply->readAll();
+        qDebug() << "HTTP OK, response:" << body;
+    }
+
+    reply->deleteLater();
+}

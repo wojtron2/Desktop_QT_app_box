@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
 
 inline constexpr auto VERSION_SW = "0.2.1";
 
@@ -24,16 +26,26 @@ public:
 
 
 private slots:
+    //NETWORK
+    void onHttpFinished(QNetworkReply *reply);
+
+    void on_LED1ON_clicked();
+    void on_LED1OFF_clicked();
+
+
+    // old
     void on_pushButton_CONNECT_clicked();
 
     void on_pushButton_CLEAR_LOG_clicked(); // deklaracja funkcji przycisku czyszczenia logow
 
 private:
+    Ui::MainWindow *ui;
+
+    QNetworkAccessManager *m_netManager;
+
     // zapisywanie i odczyt ustawien
     void loadSettings();   // save settings
     void saveSettings();   // load settings
 
-
-    Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H
