@@ -6,7 +6,7 @@
 #include <QNetworkReply>
 #include <QNetworkRequest>
 
-inline constexpr auto VERSION_SW = "0.3.0";
+inline constexpr auto VERSION_SW = "0.3.1";
 
 
 QT_BEGIN_NAMESPACE
