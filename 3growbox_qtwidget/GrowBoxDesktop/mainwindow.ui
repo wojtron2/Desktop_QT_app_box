@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="tab1_status">
      <property name="styleSheet">
@@ -848,6 +848,32 @@ padding: 8px;}</string>
         <property name="text">
          <string>Adres IP:</string>
         </property>
+       </widget>
+       <widget class="QWidget" name="">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>140</y>
+          <width>194</width>
+          <height>56</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="pushButton_31">
+           <property name="text">
+            <string>Czestotliwosc autoupdate status</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_32">
+           <property name="text">
+            <string>Autoupdate status</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </widget>
       <widget class="QWidget" name="tab_5">

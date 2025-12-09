@@ -158,6 +158,7 @@ void MainWindow::on_LED1ON_clicked()
 
     QNetworkRequest req{QUrl(urlStr)};
     m_netManager->get(req);   // HTTP GET
+    logMessage("NETWORK: LED 1 ON.");
 }
 
 void MainWindow::on_LED1OFF_clicked()
@@ -170,4 +171,5 @@ void MainWindow::on_LED1OFF_clicked()
 
     QNetworkRequest req{QUrl(urlStr)};
     m_netManager->get(req);   // HTTP GET
+    logMessage("NETWORK: LED 1 OFF.");
 }
