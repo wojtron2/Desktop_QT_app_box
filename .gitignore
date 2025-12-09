@@ -57,3 +57,7 @@ compile_commands.json
 # Katalogi build Qt / CMake
 build*/
 cmake-build-*/
+3growbox_qtwidget/GrowBoxDesktop/release/0_3_2/settings.cfg
+3growbox_qtwidget/GrowBoxDesktop/release/w uzyciu/0_3_1inuse/settings.cfg
+3growbox_qtwidget/GrowBoxDesktop/release/w uzyciu/0_3_2inuse/settings.cfg
+3growbox_qtwidget/GrowBoxDesktop/release/w uzyciu/0_3_1inuse/settings.cfg
