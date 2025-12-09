@@ -27,6 +27,12 @@ MainWindow::MainWindow(QWidget *parent)
                    .arg(VERSION_SW));
     loadSettings();  // wczytaj ustawienia z pliku
 
+
+
+    setupLedButtons();   // podpinamy wszystkie przyciski LED
+    connect(m_netManager, &QNetworkAccessManager::finished,
+            this, &MainWindow::onHttpFinished);
+
 }
 
 MainWindow::~MainWindow()
@@ -148,6 +154,80 @@ void MainWindow::onHttpFinished(QNetworkReply *reply)
 }
 
 
+void MainWindow::sendGet(const QString &path)
+{
+    const QString ip   = ui->lineEdit_IP->text().trimmed();
+    const QString port = ui->lineEdit_PORT->text().trimmed();
+
+    if (ip.isEmpty() || port.isEmpty()) {
+        QMessageBox::warning(this, "Blad", "Podaj IP i port.");
+        return;
+    }
+
+    const QString urlStr =
+        QStringLiteral("http://%1:%2/%3").arg(ip, port, path);
+
+    logMessage(QStringLiteral("NETWORK: GET %1").arg(urlStr));
+
+    QNetworkRequest req{ QUrl(urlStr) };   //
+    m_netManager->get(req);               // HTTP GET
+}
+
+
+
+void MainWindow::setupLedButtons()
+{
+    auto connectLed = [this](QPushButton *btn, const QString &path)
+    {
+        if (!btn)
+            return;
+
+        connect(btn, &QPushButton::clicked, this, [this, path]() {
+            sendGet(path);
+        });
+    };
+
+    // LED1
+    connectLed(ui->pushButton_LED1ON,  "api/led1on");
+    connectLed(ui->pushButton_LED1OFF, "api/led1off");
+
+    // LED2
+    connectLed(ui->pushButton_LED2ON,  "api/led2on");
+    connectLed(ui->pushButton_LED2OFF, "api/led2off");
+
+    // LED3
+    connectLed(ui->pushButton_LED3ON,  "api/led3on");
+    connectLed(ui->pushButton_LED3OFF, "api/led3off");
+
+    // LED4
+    connectLed(ui->pushButton_LED4ON,  "api/led4on");
+    connectLed(ui->pushButton_LED4OFF, "api/led4off");
+
+    // LED5
+    connectLed(ui->pushButton_LED5ON,  "api/led5on");
+    connectLed(ui->pushButton_LED5OFF, "api/led5off");
+
+    // LED6
+    connectLed(ui->pushButton_LED6ON,  "api/led6on");
+    connectLed(ui->pushButton_LED6OFF, "api/led6off");
+
+    // LED7
+    connectLed(ui->pushButton_LED7ON,  "api/led7on");
+    connectLed(ui->pushButton_LED7OFF, "api/led7off");
+
+    // LED8
+    connectLed(ui->pushButton_LED8ON,  "api/led8on");
+    connectLed(ui->pushButton_LED8OFF, "api/led8off");
+
+    // wszystkie na raz
+    connectLed(ui->pushButton_LED_ALL_ON,  "api/led_all_on");
+    connectLed(ui->pushButton_LED_ALL_OFF, "api/led_all_off");
+}
+
+
+
+/*
+
 void MainWindow::on_LED1ON_clicked()
 {
     const QString ip   = ui->lineEdit_IP->text().trimmed();
@@ -173,3 +253,5 @@ void MainWindow::on_LED1OFF_clicked()
     m_netManager->get(req);   // HTTP GET
     logMessage("NETWORK: LED 1 OFF.");
 }
+
+*/

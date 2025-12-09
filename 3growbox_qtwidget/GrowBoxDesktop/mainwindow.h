@@ -4,8 +4,9 @@
 #include <QMainWindow>
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
+#include <QNetworkRequest>
 
-inline constexpr auto VERSION_SW = "0.2.3";
+inline constexpr auto VERSION_SW = "0.3.0";
 
 
 QT_BEGIN_NAMESPACE
@@ -29,8 +30,10 @@ private slots:
     //NETWORK
     void onHttpFinished(QNetworkReply *reply);
 
+    /*
     void on_LED1ON_clicked();
     void on_LED1OFF_clicked();
+*/
 
 
     // old
@@ -42,6 +45,11 @@ private:
     Ui::MainWindow *ui;
 
     QNetworkAccessManager *m_netManager;
+
+
+    void sendGet(const QString &path);   // wspolna funkcja HTTP GET
+    void setupLedButtons();              // podpina wszystkie LED-y
+
 
     // zapisywanie i odczyt ustawien
     void loadSettings();   // save settings
